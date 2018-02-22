@@ -24,6 +24,7 @@ install:
   - git clone https://github.com/isumoc/brilliant_gallery_mysql.git
   - drush pm-enable brilliant_gallery -y
   - drush cc all --yes
+  - drush status
 
 before_script:
   - drush runserver 127.0.0.1:8080 &
